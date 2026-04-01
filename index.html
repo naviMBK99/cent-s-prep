@@ -37,13 +37,13 @@
 
         <div class="brand-text">
           <span class="brand-title">CEnT-S Prep</span>
-          <span class="brand-subtitle">Courses, Materials & Exam Strategy</span>
+          <span class="brand-subtitle">Courses, Materials &amp; Exam Strategy</span>
         </div>
       </a>
 
       <!-- ========================= DESKTOP NAV ========================= -->
-      <nav class="nav desktop-nav">
-        <a href="index.html">Home</a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html" class="active-link">Home</a>
         <a href="about.html">About CEnT-S</a>
         <a href="mentor.html">Mentor</a>
         <a href="services.html">Services</a>
@@ -51,7 +51,6 @@
 
       <!-- ========================= ACTIONS ========================= -->
       <div class="nav-actions">
-        <!-- ========================= SOCIAL LINKS ========================= -->
         <div class="social-links desktop-socials">
           <a
             href="https://www.youtube.com/@CEnT-S_Tolc-i_Tolc-e_prep"
@@ -66,7 +65,7 @@
           </a>
 
           <a
-            href="https://www.instagram.com/cent_s_prep?igsh=MWZzbDA2azlwNmFhNA%3D%3D&utm_source=qr/"
+            href="https://www.instagram.com/cent_s_prep/"
             target="_blank"
             rel="noopener noreferrer"
             class="social-link instagram"
@@ -90,11 +89,16 @@
           </a>
         </div>
 
-        <!-- ========================= CTA BUTTON ========================= -->
         <a href="services.html" class="consult-btn desktop-cta">Book Consultation</a>
 
-        <!-- ========================= BURGER ========================= -->
-        <button class="burger-btn" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
+        <button
+          class="burger-btn"
+          id="burgerBtn"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+          type="button"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -105,7 +109,7 @@
     <!-- ========================= MOBILE MENU ========================= -->
     <div class="mobile-menu" id="mobileMenu">
       <div class="container mobile-menu-inner">
-        <a href="index.html" class="mobile-link">Home</a>
+        <a href="index.html" class="mobile-link active-link">Home</a>
         <a href="about.html" class="mobile-link">About CEnT-S</a>
         <a href="mentor.html" class="mobile-link">Mentor</a>
         <a href="services.html" class="mobile-link">Services</a>
@@ -154,50 +158,110 @@
   </header>
 
   <main>
-    <!-- ========================= HERO SECTION WITH BIG MOVING GALLERY ========================= -->
+    <!-- ========================= HERO SECTION ========================= -->
     <section class="hero hero-gallery">
       <!-- ========================= MOVING BACKGROUND GALLERY ========================= -->
-      <div class="hero-gallery-bg" >
+      <div class="hero-gallery-bg">
         <div class="gallery-track gallery-track-1">
-          <div class="gallery-item gallery-item-large"><img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSopIsMeecXLOAPqyn12hyN76o0IeH7WunV0BUBjv4eQPZ1HGJuaeICAIqPtczbi7rbWv8qEF_nz8u0WLMj5f8U4gs&s=19" alt="Students in Italy" /></div>
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/1272618582/it/foto/trento-italy-general-view-of-students-and-a-university-teacher-wearing-protective-masks-inside.jpg?s=612x612&w=0&k=20&c=T7AM0badlGmEeOPZggMQGsk_e9aBCqCUJhyjAEulh-Y=" alt="Italian university campus" /></div>
-          <div class="gallery-item gallery-item-wide"><img src="https://media.istockphoto.com/id/539115110/it/foto/colosseo-di-roma-e-sole-mattutino-italia.jpg?s=612x612&w=0&k=20&c=ngbBMGVEkJxHsnt4SN7ZuncEnRenq2tFI8V0-zCg4pw=" alt="Students studying together" /></div>
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/184870217/it/foto/studenti-nella-biblioteca.jpg?s=612x612&w=0&k=20&c=_3sebVE5tyPJDmUgUfzCzZPpJ37IOXYp-LAT9e4hoxI=" alt="University in Italy" /></div>
-          <div class="gallery-item gallery-item-large"><img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSPkWwH9Ia-fE82bQV4n8j7NXQEtrVXuWzHaZTx3yMv8jdPvfqqURsQWS8aK8PO1bL6fl-T5P4fztGTrQAv5XN95_g&s=19" alt="Students walking on campus" /></div>
+          <div class="gallery-item gallery-item-large">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSopIsMeecXLOAPqyn12hyN76o0IeH7WunV0BUBjv4eQPZ1HGJuaeICAIqPtczbi7rbWv8qEF_nz8u0WLMj5f8U4gs&amp;s=19" alt="Students in Italy" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/1272618582/it/foto/trento-italy-general-view-of-students-and-a-university-teacher-wearing-protective-masks-inside.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=T7AM0badlGmEeOPZggMQGsk_e9aBCqCUJhyjAEulh-Y=" alt="Italian university campus" />
+          </div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://media.istockphoto.com/id/539115110/it/foto/colosseo-di-roma-e-sole-mattutino-italia.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=ngbBMGVEkJxHsnt4SN7ZuncEnRenq2tFI8V0-zCg4pw=" alt="Colosseum in Rome" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/184870217/it/foto/studenti-nella-biblioteca.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=_3sebVE5tyPJDmUgUfzCzZPpJ37IOXYp-LAT9e4hoxI=" alt="Students in library" />
+          </div>
+          <div class="gallery-item gallery-item-large">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSPkWwH9Ia-fE82bQV4n8j7NXQEtrVXuWzHaZTx3yMv8jdPvfqqURsQWS8aK8PO1bL6fl-T5P4fztGTrQAv5XN95_g&amp;s=19" alt="Students walking on campus" />
+          </div>
 
-          <div class="gallery-item gallery-item-large"><img src="https://media.gettyimages.com/id/1272618582/it/foto/trento-italy-general-view-of-students-and-a-university-teacher-wearing-protective-masks-inside.jpg?s=612x612&w=0&k=20&c=T7AM0badlGmEeOPZggMQGsk_e9aBCqCUJhyjAEulh-Y=" alt="Students in Italy" /></div>
-          <div class="gallery-item"><img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSigqhSNbDjN2tnKCAv2OjBDmR5G3v75Q-Q2fNisuLxljWFkuisSxR8Z1L9lPzP7iTZTS94ZurJonya39ZmvzELAkk&s=19" alt="Italian university campus" alt="Italian university campus" /></div>
-          <div class="gallery-item gallery-item-wide"><img src="https://media.istockphoto.com/id/539115110/it/foto/colosseo-di-roma-e-sole-mattutino-italia.jpg?s=612x612&w=0&k=20&c=ngbBMGVEkJxHsnt4SN7ZuncEnRenq2tFI8V0-zCg4pw=" alt="Students studying together" /></div>
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/184870217/it/foto/studenti-nella-biblioteca.jpg?s=612x612&w=0&k=20&c=_3sebVE5tyPJDmUgUfzCzZPpJ37IOXYp-LAT9e4hoxI=" alt="University in Italy" /></div>
-          <div class="gallery-item gallery-item-large"><img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSPkWwH9Ia-fE82bQV4n8j7NXQEtrVXuWzHaZTx3yMv8jdPvfqqURsQWS8aK8PO1bL6fl-T5P4fztGTrQAv5XN95_g&s=19" alt="Students walking on campus" /></div>
+          <div class="gallery-item gallery-item-large">
+            <img src="https://media.gettyimages.com/id/1272618582/it/foto/trento-italy-general-view-of-students-and-a-university-teacher-wearing-protective-masks-inside.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=T7AM0badlGmEeOPZggMQGsk_e9aBCqCUJhyjAEulh-Y=" alt="Students in Italy" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSigqhSNbDjN2tnKCAv2OjBDmR5G3v75Q-Q2fNisuLxljWFkuisSxR8Z1L9lPzP7iTZTS94ZurJonya39ZmvzELAkk&amp;s=19" alt="Italian university building" />
+          </div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://media.istockphoto.com/id/539115110/it/foto/colosseo-di-roma-e-sole-mattutino-italia.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=ngbBMGVEkJxHsnt4SN7ZuncEnRenq2tFI8V0-zCg4pw=" alt="Rome city view" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/184870217/it/foto/studenti-nella-biblioteca.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=_3sebVE5tyPJDmUgUfzCzZPpJ37IOXYp-LAT9e4hoxI=" alt="Students studying indoors" />
+          </div>
+          <div class="gallery-item gallery-item-large">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSPkWwH9Ia-fE82bQV4n8j7NXQEtrVXuWzHaZTx3yMv8jdPvfqqURsQWS8aK8PO1bL6fl-T5P4fztGTrQAv5XN95_g&amp;s=19" alt="Campus lifestyle" />
+          </div>
         </div>
 
         <div class="gallery-track gallery-track-2">
-          <div class="gallery-item gallery-item-wide"><img src="https://images.pexels.com/photos/210017/pexels-photo-210017.jpeg"  ></div>
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/1487574578/photo/rose-wine-glasses-with-antipasti-picnic-food-snacks-on-sunny-garden-party-table.jpg?s=612x612&w=0&k=20&c=mXrTUq-V4im_r4OqDcbs9VlzGMvHmWrS8az1Ob-cYtU=" ></div>
-          <div class="gallery-item gallery-item-large"><img src="https://media.istockphoto.com/id/1451071102/it/foto/siracusa-italia-street-scene-al-crepuscolo.jpg?s=612x612&w=0&k=20&c=ZdFOHF6_vM6HFZjq0aRZeUkQELssNL-SxTgY45oNR28=" ></div>
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/2160748918/photo/colorful-cliffside-houses-in-manarola-cinque-terre-italy.jpg?s=612x612&w=0&k=20&c=fBLUhI_BY7fLShrZnd9JA0StexBHiuPuGRMglMPXCoI=" ></div>
-          <div class="gallery-item gallery-item-wide"><img src="https://media.gettyimages.com/id/967326474/photo/young-couple-having-fun-riding-scooter-in-old-european-town.jpg?s=612x612&w=0&k=20&c=AUXxhKX4qa_9r2-lOfIXDDhDRREwfC-VHSuiOHfiurM=" ></div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://images.pexels.com/photos/210017/pexels-photo-210017.jpeg" alt="Italian street view" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/1487574578/photo/rose-wine-glasses-with-antipasti-picnic-food-snacks-on-sunny-garden-party-table.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=mXrTUq-V4im_r4OqDcbs9VlzGMvHmWrS8az1Ob-cYtU=" alt="Italian food and picnic" />
+          </div>
+          <div class="gallery-item gallery-item-large">
+            <img src="https://media.istockphoto.com/id/1451071102/it/foto/siracusa-italia-street-scene-al-crepuscolo.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=ZdFOHF6_vM6HFZjq0aRZeUkQELssNL-SxTgY45oNR28=" alt="Street in Sicily" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/2160748918/photo/colorful-cliffside-houses-in-manarola-cinque-terre-italy.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=fBLUhI_BY7fLShrZnd9JA0StexBHiuPuGRMglMPXCoI=" alt="Cinque Terre houses" />
+          </div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://media.gettyimages.com/id/967326474/photo/young-couple-having-fun-riding-scooter-in-old-european-town.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=AUXxhKX4qa_9r2-lOfIXDDhDRREwfC-VHSuiOHfiurM=" alt="Lifestyle in Italy" />
+          </div>
 
-          <div class="gallery-item gallery-item-wide"><img src="https://media.gettyimages.com/id/642290985/it/foto/the-temple-of-saturn-in-the-roman-forum-rome.jpg?s=612x612&w=0&k=20&c=iabU6Bs4FK1oc06RPgS1c68WsGvJWDFgjgjA251sdR0=" ></div>
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/143919746/it/foto/galleria-vittorio-emanuele-ii-a-milano.jpg?s=612x612&w=0&k=20&c=N6ggm44d5LiEYgJjoKDzLXSywC02PVc6JTLg47acXEc=" ></div>
-          <div class="gallery-item gallery-item-large"><img src="https://media.gettyimages.com/id/637851834/it/foto/paesaggio-urbano-di-firenze-e-duomo-di-santa-maria-del-fiore.jpg?s=612x612&w=0&k=20&c=ubNgwnPkTEOf-1xAXK38CjrWvyOQTVQo37gKXY9ktx4=" ></div>
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/493559890/it/foto/gruppo-di-amici-al-bar-pianificazione-del-prossimo-viaggio.jpg?s=612x612&w=0&k=20&c=KPolSAYcRckbv7u5t9BDxoqjJNQ1jZglDcYwce_9Hyo=" ></div>
-          <div class="gallery-item gallery-item-wide"><img src="https://media.gettyimages.com/id/1040932672/photo/famous-italian-gelato-at-trevi-fountain-rome.jpg?s=612x612&w=0&k=20&c=lq_41N0_o9KaNNn6xwVS-pgHktH50npXgUVtSz1VUPg=" ></div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://media.gettyimages.com/id/642290985/it/foto/the-temple-of-saturn-in-the-roman-forum-rome.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=iabU6Bs4FK1oc06RPgS1c68WsGvJWDFgjgjA251sdR0=" alt="Roman Forum" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/143919746/it/foto/galleria-vittorio-emanuele-ii-a-milano.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=N6ggm44d5LiEYgJjoKDzLXSywC02PVc6JTLg47acXEc=" alt="Milan gallery" />
+          </div>
+          <div class="gallery-item gallery-item-large">
+            <img src="https://media.gettyimages.com/id/637851834/it/foto/paesaggio-urbano-di-firenze-e-duomo-di-santa-maria-del-fiore.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=ubNgwnPkTEOf-1xAXK38CjrWvyOQTVQo37gKXY9ktx4=" alt="Florence skyline" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/493559890/it/foto/gruppo-di-amici-al-bar-pianificazione-del-prossimo-viaggio.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=KPolSAYcRckbv7u5t9BDxoqjJNQ1jZglDcYwce_9Hyo=" alt="Friends planning trip" />
+          </div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://media.gettyimages.com/id/1040932672/photo/famous-italian-gelato-at-trevi-fountain-rome.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=lq_41N0_o9KaNNn6xwVS-pgHktH50npXgUVtSz1VUPg=" alt="Gelato in Rome" />
+          </div>
         </div>
 
         <div class="gallery-track gallery-track-3">
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/1467909966/photo/friends-toasting-at-the-picnic.jpg?s=612x612&w=0&k=20&c=2KG57yZCokEFcDMQYj1-3JX5A9duUwy1UnWGpc34zDg=" ></div>
-          <div class="gallery-item gallery-item-wide"><img src="https://media.gettyimages.com/id/1007108558/it/foto/on-the-library.jpg?s=612x612&w=0&k=20&c=p5Ug5YwKYxjM04x_7GPDXujGwzfgdG-1Fdds6JXyVpI=" ></div>
-          <div class="gallery-item gallery-item-large"><img src="https://media.gettyimages.com/id/157049877/it/foto/students-follow-a-lesson-at-the-roma-tre-university-on-november-7-2012-in-rome-about-870.jpg?s=612x612&w=0&k=20&c=X_BSrbtM5pnqBMDzlP6WQ3PN8AQmfvlK1vG_xsj1OD8=" ></div>
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/842772098/it/foto/view-of-the-fa%C3%A7ade-of-basilica-of-santambrogio-from-the-ansperto-atrium.jpg?s=612x612&w=0&k=20&c=5ykWd0QV4t_a2oxcy5r9rKMMDwqMMH3g8-F1iMxacAA="></div>
-          <div class="gallery-item gallery-item-wide"><img src="https://media.gettyimages.com/id/1593921703/it/foto/people-dining-outside-restaurants-and-bars-at-dusk-in-catania.jpg?s=612x612&w=0&k=20&c=ywMz6QQuSnKr5W3H8-rsjMTPYjatym17wCYtQbO_RnU="></div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/1467909966/photo/friends-toasting-at-the-picnic.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=2KG57yZCokEFcDMQYj1-3JX5A9duUwy1UnWGpc34zDg=" alt="Friends picnic" />
+          </div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://media.gettyimages.com/id/1007108558/it/foto/on-the-library.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=p5Ug5YwKYxjM04x_7GPDXujGwzfgdG-1Fdds6JXyVpI=" alt="Library study space" />
+          </div>
+          <div class="gallery-item gallery-item-large">
+            <img src="https://media.gettyimages.com/id/157049877/it/foto/students-follow-a-lesson-at-the-roma-tre-university-on-november-7-2012-in-rome-about-870.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=X_BSrbtM5pnqBMDzlP6WQ3PN8AQmfvlK1vG_xsj1OD8=" alt="University lecture in Italy" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/842772098/it/foto/view-of-the-fa%C3%A7ade-of-basilica-of-santambrogio-from-the-ansperto-atrium.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=5ykWd0QV4t_a2oxcy5r9rKMMDwqMMH3g8-F1iMxacAA=" alt="Historic architecture in Italy" />
+          </div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://media.gettyimages.com/id/1593921703/it/foto/people-dining-outside-restaurants-and-bars-at-dusk-in-catania.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=ywMz6QQuSnKr5W3H8-rsjMTPYjatym17wCYtQbO_RnU=" alt="Evening life in Catania" />
+          </div>
 
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/1176808453/it/foto/navigli-canals-in-the-old-town-at-sunset-milan-italy.jpg?s=612x612&w=0&k=20&c=r5lfzY20Y-QFH68AuQwLVRGyqy5ipdGTjpBFsovb7HE=" ></div>
-          <div class="gallery-item gallery-item-wide"><img src="https://media.gettyimages.com/id/1388400714/it/foto/crowds-of-people-on-via-del-corso-shopping-street-in-rome-italy.jpg?s=612x612&w=0&k=20&c=h9jRFHdN2izl17KST2_JH9bmFfQLO0hFskFOLbzSu_Q=" ></div>
-          <div class="gallery-item gallery-item-large"><img src="https://media.gettyimages.com/id/1145040590/it/foto/beautiful-sunset-cityscape-view-of-the-santa-maria-nouvelle-duomo-and-the-town-of-florence-in.jpg?s=612x612&w=0&k=20&c=sNq60YTU4xIazhYJigXbfYuXBSuVF7EOUx1US240rG4=" ></div>
-          <div class="gallery-item"><img src="https://media.gettyimages.com/id/611076216/it/foto/grandi-momenti-con-grandi-amici.jpg?s=612x612&w=0&k=20&c=A9OQvO86HyTau7cgfAALEFQjc3ikVUVo83oBRWa_bow=" ></div>
-          <div class="gallery-item gallery-item-wide"><img src="https://media.gettyimages.com/id/639558856/it/foto/madre-e-figlia-in-visita-alla-citt%C3%A0-di-firenze-toscana.jpg?s=612x612&w=0&k=20&c=NT8NIW41HRXd9KniFA31HGfP4UjF-dxDlaSikZGPR8c=" ></div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/1176808453/it/foto/navigli-canals-in-the-old-town-at-sunset-milan-italy.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=r5lfzY20Y-QFH68AuQwLVRGyqy5ipdGTjpBFsovb7HE=" alt="Navigli canals in Milan" />
+          </div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://media.gettyimages.com/id/1388400714/it/foto/crowds-of-people-on-via-del-corso-shopping-street-in-rome-italy.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=h9jRFHdN2izl17KST2_JH9bmFfQLO0hFskFOLbzSu_Q=" alt="Busy street in Rome" />
+          </div>
+          <div class="gallery-item gallery-item-large">
+            <img src="https://media.gettyimages.com/id/1145040590/it/foto/beautiful-sunset-cityscape-view-of-the-santa-maria-nouvelle-duomo-and-the-town-of-florence-in.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=sNq60YTU4xIazhYJigXbfYuXBSuVF7EOUx1US240rG4=" alt="Florence at sunset" />
+          </div>
+          <div class="gallery-item">
+            <img src="https://media.gettyimages.com/id/611076216/it/foto/grandi-momenti-con-grandi-amici.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=A9OQvO86HyTau7cgfAALEFQjc3ikVUVo83oBRWa_bow=" alt="Friends together" />
+          </div>
+          <div class="gallery-item gallery-item-wide">
+            <img src="https://media.gettyimages.com/id/639558856/it/foto/madre-e-figlia-in-visita-alla-citt%C3%A0-di-firenze-toscana.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=NT8NIW41HRXd9KniFA31HGfP4UjF-dxDlaSikZGPR8c=" alt="Travel in Florence" />
+          </div>
         </div>
       </div>
 
@@ -209,99 +273,92 @@
         <div class="hero-copy">
           <p class="eyebrow">CEnT-S Preparation with Beksultan Maatkulov</p>
 
-          <h2 class="hero-copy_h2">
+          <h1 class="hero-copy_h2">
             Prepare for <span class="gradient-text">CEnT-S</span><br />
             with a structured course,<br />
             clear strategy, and<br />
             ready-made materials
-          </h2>
-<div class="hero-text">
-          <p class="hero-text hero-text-large" >
-            Build your path to Italian universities with guided preparation, smart study
-            materials, exam strategy, and a modern learning approach designed for CEnT-S students.
-          </p>
+          </h1>
+
+          <div class="hero-text">
+            <p class="hero-text-large">
+              Build your path to Italian universities with guided preparation, smart study
+              materials, exam strategy, and a modern learning approach designed for CEnT-S students.
+            </p>
           </div>
 
-          <div class="hero-actions" >
-            <a class="consult-btn" href="services.html" >Book Consultation</a>
+          <div class="hero-actions">
+            <a class="consult-btn" href="services.html">Book Consultation</a>
             <a class="btn btn-secondary" href="about.html">Learn About CEnT-S</a>
           </div>
-
-
         </div>
       </div>
     </section>
 
-    <!-- ========================= TRUST STRIP ========================= -->
-    <section class="brands">
-      <div class="container brands-row">
-        <span>Online Course</span>
-        <span>Self-Study Pack</span>
-        <span>YouTube Lessons</span>
-        <span>CEnT-S Strategy</span>
-      </div>
-    </section>
+     <!-- ========================= STATISTICS ========================= -->
 
-    <!-- ========================= SHORT INTRO CARDS ========================= -->
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">What You Will Find</p>
-          <h2>Everything is split into simple pages</h2>
-          <p>
-            The homepage stays clean, while the detailed information is organised
-            into separate pages for the exam, the mentor, and the preparation offers.
-          </p>
+  <section class="stats-section">
+  <div class="stats-bg-glow-left"></div>
+  <div class="stats-bg-glow-right"></div>
+  <div class="stats-bg-lines"></div>
+  <div class="stats-bg-bottom"></div>
+  <div class="stats-bg-dust"></div>
+
+  <div class="container" style="margin-top: -60px;">
+    <div class="stats-heading">
+      <p class="stats-eyebrow">OUR ACHIEVEMENTS AT</p>
+      <h2 class="stats-title">CeNT-S Prep</h2>
+      <p class="stats-subtitle">See the incredible results we’re proud to share</p>
+    </div>
+
+    <div class="stats-grid">
+      <article class="stats-card">
+        <div class="stats-number">500+</div>
+        <div class="stats-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16 11c1.66 0 3-1.57 3-3.5S17.66 4 16 4s-3 1.57-3 3.5S14.34 11 16 11Zm-8 0c1.66 0 3-1.57 3-3.5S9.66 4 8 4 5 5.57 5 7.5 6.34 11 8 11Zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13Zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.96 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5Z"/>
+          </svg>
         </div>
+        <h3>Successful<br>Students</h3>
+      </article>
 
-        <div class="grid-3">
-          <article class="info-card glass">
-            <div class="icon">01</div>
-            <h3>About CEnT</h3>
-            <p>
-              Full explanation of what CEnT-S is, how the scoring works,
-              macro-periods, and breakdown of all sections.
-            </p>
-            <a href="about.html" class="text-link">Open page</a>
-          </article>
-
-          <article class="info-card glass">
-            <div class="icon">02</div>
-            <h3>About the Mentor</h3>
-            <p>
-              A dedicated page about Beksultan Maatkulov, his teaching approach,
-              and why students prepare with him.
-            </p>
-            <a href="mentor.html" class="text-link">Open page</a>
-          </article>
-
-          <article class="info-card glass">
-            <div class="icon">03</div>
-            <h3>Programs & Materials</h3>
-            <p>
-              Course details, pricing block, YouTube lessons, and student results
-              are placed on a separate page.
-            </p>
-            <a href="services.html" class="text-link">Open page</a>
-          </article>
+      <article class="stats-card stats-card-featured">
+        <div class="stats-number">90%</div>
+        <div class="stats-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2a10 10 0 1 0 10 10A10.01 10.01 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8.01 8.01 0 0 1-8 8Zm0-14a1 1 0 0 0-1 1v4.59l-2.29 2.29a1 1 0 1 0 1.41 1.41l2.59-2.59A1 1 0 0 0 13 12V7a1 1 0 0 0-1-1Z"/>
+          </svg>
         </div>
-      </div>
-    </section>
+        <h3>Average<br>Student Score</h3>
+      </article>
 
-    <!-- ========================= QUICK CTA ========================= -->
-    <section class="section section-dark">
-      <div class="container cta-box glass">
-        <div>
-          <p class="eyebrow">Start Here</p>
-          <h2>Choose how you want to prepare</h2>
-          <p>
-            Explore the full course, get the self-study materials, or begin with
-            free YouTube lessons.
-          </p>
+      <article class="stats-card">
+        <div class="stats-number">8+</div>
+        <div class="stats-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 21h6v-1H9Zm3-20a7 7 0 0 0-4 12.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3.26A7 7 0 0 0 12 1Zm2 11.58-.5.29V16h-3v-3.13l-.5-.29A5 5 0 1 1 14 12.58Z"/>
+          </svg>
         </div>
-        <a class="btn btn-primary" href="services.html">See Services</a>
-      </div>
-    </section>
+        <h3>Years of<br>Experience</h3>
+      </article>
+
+      <article class="stats-card">
+        <div class="stats-number">1200+</div>
+        <div class="stats-icon">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 2H8a2 2 0 0 0-2 2v13a1 1 0 0 0 1.6.8L10 16h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 4h10v10H9.33L8 15.11Zm-4 3h1v13a2 2 0 0 0 2 2h11v-1H7Z"/>
+          </svg>
+        </div>
+        <h3>Hours of<br>Training</h3>
+      </article>
+    </div>
+
+    <div class="stats-action">
+      <a href="services.html" class="stats-btn">Join Our Success Story</a>
+    </div>
+  </div>
+</section>
+
   </main>
 
   <!-- ========================= FOOTER ========================= -->
@@ -319,7 +376,7 @@
       </div>
 
       <div class="footer-links">
-        <a href="about.html">About CEnT</a>
+        <a href="about.html">About CEnT-S</a>
         <a href="mentor.html">Mentor</a>
         <a href="services.html">Services</a>
       </div>
